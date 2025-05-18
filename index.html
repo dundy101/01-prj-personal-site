@@ -6,6 +6,70 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Header at the very top with navigation above the headshot -->
+  <header>
+    <div class="header-content">
+      <!-- Navigation menu is now above the headshot -->
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+      <!-- Headshot image below the navigation -->
+      <img src="img/headshot.jpeg" alt="My Headshot" class="headshot">
+    </div>
+    <!-- Subheader with About Me under the headshot -->
+    <div class="subheader">
+      <p>
+        I am <span class="highlight-name">Andy Hong</span>, a Computer Science student at the University of Cincinnati. I hope you enjoy my work!
+      </p>
+    </div>
+  </header>
+
+  <!-- Projects and Skills sections side by side -->
+  <div class="sections-row">
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Project 1 - Coming Soon!</li>
+        <li>Project 2 - Coming Soon!</li>
+        <!-- Add more projects as you create them -->
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>MATLAB</li>
+        <!-- Add more skills as you learn them -->
+      </ul>
+    </section>
+  </div>
+
+  <!-- New My Links section centered below the two sections -->
+  <section id="my-links" class="center-section">
+    <h2>My Links</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/andrewhong123/" target="_blank">LinkedIn</a>
+    </p>
+    <p>
+      <a href="https://app.joinhandshake.com/profiles/7aukzy" target="_blank">Handshake</a>
+    </p>
+    <!-- Add your links here, for example: -->
+    <!-- <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p> -->
+  </section>
+
+  <!-- Footer section for contact info -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>You can reach me at <a href="mailto:your.email@example.com">hongaj@mail.uc.edu</a></p>
+    <p>Phone: (123) 456-7890</p>
+  </footer>
 </body>
 </html>

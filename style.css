@@ -1,1 +1,163 @@
 /* Add you CSS here */
+
+/* Set a simple background color and font for the whole page */
+body {
+    background-color: #f8f9fa; /* light gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Remove extra bottom padding so no blank space under footer */
+}
+
+/* Make the header background white and much taller */
+header {
+    background-color: #ffffff; /* slightly less bright teal */
+    color: #13c8b0; /* match header text color to new teal */
+    padding: 80px 0 60px 0; /* much more padding for a bigger header */
+}
+
+/* Center header content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the headshot image */
+.headshot {
+    width: 240px; /* set image size */
+    height: 240px;
+    border-radius: 50%; /* make image round */
+    object-fit: cover;
+    border: 6px solid #000000; /* black border */
+    margin-bottom: 70px; /* add a lot of space below the picture */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Center the header text */
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none; /* remove bullets */
+    padding: 0;
+    margin: 0 0 50px 0; /* add a big gap below the navigation */
+    text-align: center;
+    font-size: 1.5em; /* make navigation font bigger */
+}
+
+header nav ul li {
+    display: inline; /* display menu items in a row */
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #13c8b0; /* slightly less bright teal for nav links */
+    font-weight: bold;
+}
+
+/* Style the subheader (About Me section under the headshot) */
+.subheader {
+    text-align: center;
+    margin-top: 30px; /* space above subheader */
+    margin-bottom: 40px; /* space below subheader */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subheader h2 {
+    color: #13c8b0; /* slightly less bright teal */
+    margin-bottom: 10px;
+}
+
+.subheader p {
+    font-size: 2em;
+    color: #222;
+    margin: 0;
+}
+
+/* Add some spacing to each section */
+section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* Center the My Links section and keep style consistent */
+.center-section {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    text-align: center;
+}
+
+/* Style section headings */
+section h2 {
+    color: #13c8b0; /* slightly less bright teal */
+    margin-top: 0;
+}
+
+/* Style lists in Projects and Skills */
+section ul {
+    padding-left: 20px;
+}
+
+/* Add a little space below each paragraph */
+section p {
+    margin-bottom: 10px;
+}
+
+/* Container to hold Projects and Skills side by side */
+.sections-row {
+    display: flex;              /* place children in a row */
+    justify-content: center;    /* center the row horizontally */
+    gap: 30px;                  /* space between the two sections */
+    margin: 30px auto;          /* vertical spacing and center on page */
+    max-width: 1240px;          /* prevent row from being too wide */
+}
+
+/* Make each section in the row take up equal space and look nice */
+.sections-row section {
+    flex: 1 1 0;                /* allow sections to grow/shrink equally */
+    max-width: 600px;           /* keep the same max width as before */
+}
+
+.highlight-name {
+    color: #13c8b0; /* slightly less bright teal */
+    font-weight: bold;
+}
+
+/* Style the footer (contact section) */
+footer#contact {
+    background-color: #13c8b0; /* slightly less bright teal for footer background */
+    color: #fff; /* white text for contrast */
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 0px;
+    max-width: none; /* allow footer to stretch full width */
+    margin: 40px 0 0 0; /* margin only on top */
+    width: 100%;
+    /* Remove position: fixed so footer stays at the bottom of the page, not the viewport */
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+    box-sizing: border-box;
+}
+
+footer#contact h2 {
+    color: #fff; /* keep heading white in footer */
+}
+
+footer#contact a {
+    color: #fff; /* make email link white */
+    text-decoration: underline;
+}
